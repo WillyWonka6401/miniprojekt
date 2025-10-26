@@ -58,7 +58,7 @@ nav a:hover {
 main {
     display: flex;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: linear-gradient(to right, rgb(0, 145, 255), rgb(220, 22, 141));
+    background-image: radial-gradient(rgb(0, 145, 255), rgb(220, 22, 141));
     align-items: center;
     flex-direction: column;
     border: 4px dashed black;
@@ -171,7 +171,7 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: linear-gradient(to right, rgb(0, 145, 255), rgb(220, 22, 141));
+    background-image: radial-gradient(rgb(0, 145, 255), rgb(220, 22, 141));
     border: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
