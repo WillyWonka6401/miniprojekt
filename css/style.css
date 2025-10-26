@@ -24,7 +24,12 @@ li {
 a {
     color: black;
     text-decoration: none;
+    transition: 0.4s;
+}
 
+nav a:hover {
+    transform: scale(1.2);
+    color: rgb(255, 255, 255);
 }
 
 .logo {
@@ -34,6 +39,20 @@ a {
     border-radius: 20px;
     padding: 0px;
     margin-right: auto;
+}
+
+
+.logo a {
+    display: flex;          
+    align-items: center;
+    padding: 0;
+    height: 100%;
+}
+
+.logo img {
+    display: flex;
+    height: 100px;         
+    width: auto;
 }
 
 main {
@@ -51,7 +70,7 @@ main {
 
 }
 
-main h2, p {
+main h2, main p {
     display: flex;
     padding: 10px;
     margin: 0px;
@@ -70,27 +89,31 @@ main img {
 
 .produkter {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     flex-direction: row;
+    text-align: center;
     background-image: radial-gradient(rgb(0, 145, 255), rgb(220, 22, 141));
     border-right-width: 0px;
     border-left-width: 0px;
     border-top-width: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
+    padding: 20px;
 }
 
 .kort {
     display: flex;
     width: 250px;
-    height: 385px;
     align-items: center;
     flex-direction: column;
-    background-color: aquamarine;
+    background-image: linear-gradient(to right, rgb(150, 0, 255), rgb(255, 105, 180));
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
+    transition: 0.4s;
+}
+
+.kort:hover {
+    transform: scale(1.03);
 }
 
 .kort img {
@@ -99,6 +122,7 @@ main img {
     height: auto;
     align-items: center;
     border-radius: 10px;
+    margin-bottom: 10px;
 
 }
 
@@ -115,15 +139,16 @@ main img {
     color: black;
     font-weight: bold;
     text-decoration: none;
-    background-color:dodgerblue;
+    background-color: dodgerblue;
     border-radius: 5px;
     padding: 8px;
     margin: 15px;
+    transition: 0.4s;
 }
 
-:hover.kortinnehåll a {
-    padding: 10px;
-    background-color: rgb(58, 155, 252);
+.kortinnehåll a:hover {
+    transform: scale(1.1);
+    color: white;
 }
 
 footer {
@@ -266,7 +291,7 @@ footer {
 /* ===== FORMULÄR ===== */
 .kontakt-formular {
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
     align-items: center;
     background-image: linear-gradient(to right, rgb(150, 0, 255), rgb(255, 105, 180));
     border-radius: 20px;
@@ -409,4 +434,15 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+    .produkter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kort {
+        width: 90%;
+        max-width: 350px;
+    }
+}
 
